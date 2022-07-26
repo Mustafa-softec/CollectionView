@@ -87,20 +87,7 @@ namespace Cura
 
         private void FillHomeList()
         {
-            ReviewSection reviewSection = new ReviewSection();
-            reviewSection.Title = "Our happy customers";
-            reviewSection.Reviews = new List<Review>();
-            for (int i = 0; i < 10; i++)
-            {
-                reviewSection.Reviews.Add(new Review());
-            }
-            HomeList.Add(reviewSection);
-
-            #region doctors section
-            DoctorSection doctorSection = new DoctorSection();
-            doctorSection.Title = "Doctors accepting MedGulf";
-            doctorSection.Doctors = new List<Doctor>();
-
+            #region doctors
             Doctor d1 = new Doctor()
             {
                 Name = "DR. Name 1",
@@ -109,7 +96,7 @@ namespace Cura
                 Specialization = "Neurology",
                 ReviewsCount = 4
             };
-            doctorSection.Doctors.Add(d1);
+
 
             Doctor d2 = new Doctor()
             {
@@ -119,7 +106,7 @@ namespace Cura
                 Specialization = "Neurology",
                 ReviewsCount = 7
             };
-            doctorSection.Doctors.Add(d2);
+
 
 
             Doctor d3 = new Doctor()
@@ -130,7 +117,8 @@ namespace Cura
                 Specialization = "Neurology",
                 ReviewsCount = 9
             };
-            doctorSection.Doctors.Add(d3);
+
+
 
             Doctor d4 = new Doctor()
             {
@@ -140,7 +128,6 @@ namespace Cura
                 Specialization = "Neurology",
                 ReviewsCount = 8
             };
-            doctorSection.Doctors.Add(d4);
 
             Doctor d5 = new Doctor()
             {
@@ -150,7 +137,6 @@ namespace Cura
                 Specialization = "Neurology",
                 ReviewsCount = 6
             };
-            doctorSection.Doctors.Add(d5);
 
             Doctor d6 = new Doctor()
             {
@@ -160,11 +146,86 @@ namespace Cura
                 Specialization = "Neurology",
                 ReviewsCount = 5
             };
+
+
+            Patient p1 = new Patient()
+            {
+                Name = "Noura",
+                Image = "Images/u1.png",
+                Age = 35
+            };
+
+            Patient p2 = new Patient()
+            {
+
+                Name = "محمد",
+                Image = "Images/u2.png",
+                Age = 23
+            };
+
+            Patient p3 = new Patient()
+            {
+                Name = "امل",
+                Image = "Images/u1.png",
+                Age = 44
+            };
+            #endregion
+
+            #region reviws section
+            ReviewSection reviewSection = new ReviewSection();
+            reviewSection.Title = "Our happy customers";
+            reviewSection.Reviews = new List<Review>();
+
+            Review r1 = new Review()
+            {
+                Comment = "test comment",
+                Doctor = d1,
+                Patient = p1
+            };
+            reviewSection.Reviews.Add(r1);
+
+            Review r2 = new Review()
+            {
+                Comment = "اشكر الطبيب على شرحه الوافى وتوضيحه للحالة",
+                Doctor = d2,
+                Patient = p2
+            };
+            reviewSection.Reviews.Add(r2);
+
+            Review r3 = new Review()
+            {
+                Comment = "متفهم ومحترم وساعدنى كثيرا",
+                Doctor = d3,
+                Patient = p3
+            };
+            reviewSection.Reviews.Add(r3);
+
+            HomeList.Add(reviewSection);
+
+            #endregion
+
+            #region doctors section
+            DoctorSection doctorSection = new DoctorSection();
+            doctorSection.Title = "Doctors accepting MedGulf";
+            doctorSection.Doctors = new List<Doctor>();
+
+            doctorSection.Doctors.Add(d1);
+
+            doctorSection.Doctors.Add(d2);
+
+            doctorSection.Doctors.Add(d3);
+
+            doctorSection.Doctors.Add(d4);
+
+            doctorSection.Doctors.Add(d5);
+
             doctorSection.Doctors.Add(d6);
 
             HomeList.Add(doctorSection);
 
             #endregion
+
+
 
             // add more sections here ...
         }

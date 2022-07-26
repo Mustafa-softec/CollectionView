@@ -25,7 +25,7 @@ namespace Cura.Cells
 
         public void SetReviewCell(ReviewSection reviewSection)
         {
-            labelTitle = new UILabel(new CGRect(0, 0, 250, 50));
+            labelTitle = new UILabel(new CGRect(0, 0, 250, 30));
             labelTitle.Font = UIFont.BoldSystemFontOfSize(16);
             labelTitle.TextColor = UIColor.Black;
             labelTitle.Text = reviewSection.Title;
@@ -38,14 +38,14 @@ namespace Cura.Cells
 
             UICollectionViewFlowLayout flowLayout = new UICollectionViewFlowLayout()
             {
-                ItemSize = new CGSize(100, 100),
+                ItemSize = new CGSize(300, 200),
                 SectionInset = new UIEdgeInsets(20, 20, 20, 20),
                 ScrollDirection = UICollectionViewScrollDirection.Horizontal,
-                MinimumInteritemSpacing = 50, // minimum spacing between cells
-                MinimumLineSpacing = 50 // minimum spacing between rows if ScrollDirection is Vertical or between columns if Horizontal
+                MinimumInteritemSpacing = 20, // minimum spacing between cells
+                MinimumLineSpacing = 20 // minimum spacing between rows if ScrollDirection is Vertical or between columns if Horizontal
             };
 
-            CGRect collectionFrame = new CGRect(0, 50, ContentView.Frame.Width, 300);
+            CGRect collectionFrame = new CGRect(0, 30, ContentView.Frame.Width, 250);
 
             reviewCollection = new UICollectionView(collectionFrame, flowLayout);
 

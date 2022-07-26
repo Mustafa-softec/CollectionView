@@ -11,7 +11,9 @@ namespace Cura.Models
 
     public class Review
     {
-
+        public string Comment { get; set; }
+        public Doctor Doctor { get; set; }
+        public Patient Patient { get; set; }
     }
 
 }

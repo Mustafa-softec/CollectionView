@@ -140,6 +140,7 @@
         <Compile Include="Cells\DorctoHorizontalCollectionViewCell.cs" />
         <Compile Include="Models\CellType.cs" />
         <Compile Include="Adapters\DoctorHorizontalCollectionDataSource.cs" />
+        <Compile Include="Models\Patient.cs" />
     </ItemGroup>
     <ItemGroup>
       <BundleResource Include="Resources\Images\d1.png" />
@@ -150,6 +151,9 @@
       <BundleResource Include="Resources\Images\d6.png" />
       <BundleResource Include="Resources\Images\ic_arrow.png" />
       <BundleResource Include="Resources\Images\ic_stars.png" />
+      <BundleResource Include="Resources\Images\co.png" />
+      <BundleResource Include="Resources\Images\u1.png" />
+      <BundleResource Include="Resources\Images\u2.png" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -44,7 +44,7 @@ namespace Cura.Cells
 
             UIImageView starsImg = new UIImageView(UIImage.FromBundle("Images/ic_stars.png"));
             //starsImg.Center = ContentView.Center;
-            starsImg.Frame = new CGRect(100, 85, 100, 30);
+            starsImg.Frame = new CGRect(100, 85, 95, 26);
 
             labelCount = new UILabel(new CGRect(200, 92, 60, 22));
             labelCount.TextColor = UIColor.Black;

@@ -27,13 +27,13 @@ namespace Cura.Adapters
 
         public override UICollectionViewCell GetCell(UICollectionView collectionView, NSIndexPath indexPath)
         {
-            var review = (ReviewHorizontalCollectionViewCell)collectionView.DequeueReusableCell(ReviewHorizontalCollectionViewCell.Key, indexPath);
+            var cell = (ReviewHorizontalCollectionViewCell)collectionView.DequeueReusableCell(ReviewHorizontalCollectionViewCell.Key, indexPath);
 
-            //  var animal = animals[indexPath.Row];
+            var revew = items[indexPath.Row];
 
+             cell.FillData(revew);
 
-
-            return review;
+            return cell;
         }
     }
 }
