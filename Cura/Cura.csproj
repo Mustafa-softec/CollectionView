@@ -121,6 +121,7 @@
         <Folder Include="Cells\" />
         <Folder Include="Models\" />
         <Folder Include="Adapters\" />
+        <Folder Include="Resources\Images\" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
@@ -139,6 +140,16 @@
         <Compile Include="Cells\DorctoHorizontalCollectionViewCell.cs" />
         <Compile Include="Models\CellType.cs" />
         <Compile Include="Adapters\DoctorHorizontalCollectionDataSource.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <BundleResource Include="Resources\Images\d1.png" />
+      <BundleResource Include="Resources\Images\d2.png" />
+      <BundleResource Include="Resources\Images\d3.png" />
+      <BundleResource Include="Resources\Images\d4.png" />
+      <BundleResource Include="Resources\Images\d5.png" />
+      <BundleResource Include="Resources\Images\d6.png" />
+      <BundleResource Include="Resources\Images\ic_arrow.png" />
+      <BundleResource Include="Resources\Images\ic_stars.png" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -31,7 +31,7 @@ namespace Cura
             // Flow Layout
             flowLayout = new UICollectionViewFlowLayout()
             {
-                ItemSize = new CGSize(_width, 300),
+                ItemSize = new CGSize(_width, 350),
                 SectionInset = new UIEdgeInsets(20, 20, 20, 20),
                 ScrollDirection = UICollectionViewScrollDirection.Vertical,
                 MinimumInteritemSpacing = 50, // minimum spacing between cells

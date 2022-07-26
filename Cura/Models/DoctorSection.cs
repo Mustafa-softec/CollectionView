@@ -11,6 +11,10 @@ namespace Cura.Models
 
     public class Doctor
     {
-
+        public string Name { get; set; }
+        public string Image { get; set; }
+        public string Degree { get; set; }
+        public string Specialization { get; set; }
+        public int ReviewsCount { get; set; }
     }
 }

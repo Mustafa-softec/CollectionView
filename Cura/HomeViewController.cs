@@ -24,16 +24,8 @@ namespace Cura
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            // Perform any additional setup after loading the view, typically from a nib.
-
-            
-
-
-            //CollectionView.BackgroundColor = UIColor.Yellow;
-
+            CollectionView.BackgroundColor = UIColor.White;
             CollectionView.RegisterClassForCell(typeof(VerticalCollectionViewCell), verticalCellId);
-
-
         }
 
 
@@ -104,14 +96,75 @@ namespace Cura
             }
             HomeList.Add(reviewSection);
 
+            #region doctors section
             DoctorSection doctorSection = new DoctorSection();
-            doctorSection.Title = "Doctors accepting MedGulf insurance";
+            doctorSection.Title = "Doctors accepting MedGulf";
             doctorSection.Doctors = new List<Doctor>();
-            for (int i = 0; i < 10; i++)
+
+            Doctor d1 = new Doctor()
             {
-                doctorSection.Doctors.Add(new Doctor());
-            }
+                Name = "DR. Name 1",
+                Image = "Images/d1.png",
+                Degree = "SPECIALIST",
+                Specialization = "Neurology",
+                ReviewsCount = 4
+            };
+            doctorSection.Doctors.Add(d1);
+
+            Doctor d2 = new Doctor()
+            {
+                Name = "DR. Name 2",
+                Image = "Images/d2.png",
+                Degree = "SPECIALIST",
+                Specialization = "Neurology",
+                ReviewsCount = 7
+            };
+            doctorSection.Doctors.Add(d2);
+
+
+            Doctor d3 = new Doctor()
+            {
+                Name = "DR. Name 3",
+                Image = "Images/d3.png",
+                Degree = "SPECIALIST",
+                Specialization = "Neurology",
+                ReviewsCount = 9
+            };
+            doctorSection.Doctors.Add(d3);
+
+            Doctor d4 = new Doctor()
+            {
+                Name = "DR. Name 4",
+                Image = "Images/d4.png",
+                Degree = "SPECIALIST",
+                Specialization = "Neurology",
+                ReviewsCount = 8
+            };
+            doctorSection.Doctors.Add(d4);
+
+            Doctor d5 = new Doctor()
+            {
+                Name = "DR. Name 5",
+                Image = "Images/d5.png",
+                Degree = "SPECIALIST",
+                Specialization = "Neurology",
+                ReviewsCount = 6
+            };
+            doctorSection.Doctors.Add(d5);
+
+            Doctor d6 = new Doctor()
+            {
+                Name = "DR. Name 6",
+                Image = "Images/d6.png",
+                Degree = "SPECIALIST",
+                Specialization = "Neurology",
+                ReviewsCount = 5
+            };
+            doctorSection.Doctors.Add(d6);
+
             HomeList.Add(doctorSection);
+
+            #endregion
 
             // add more sections here ...
         }
