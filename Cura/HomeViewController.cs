@@ -170,7 +170,7 @@ namespace Cura
                 Age = 44
             };
             #endregion
-
+            
             #region reviws section
             ReviewSection reviewSection = new ReviewSection();
             reviewSection.Title = "Our happy customers";
@@ -183,7 +183,7 @@ namespace Cura
                 Patient = p1
             };
             reviewSection.Reviews.Add(r1);
-
+            //Settings
             Review r2 = new Review()
             {
                 Comment = "اشكر الطبيب على شرحه الوافى وتوضيحه للحالة",
@@ -226,7 +226,7 @@ namespace Cura
             #endregion
 
 
-
+            
             // add more sections here ...
         }
 

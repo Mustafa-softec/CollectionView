@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.810.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cura", "Cura\Cura.csproj", "{5A6434CA-EB2A-41F8-B363-1E81F22D9D55}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RawData", "RawData", "{91DB18D7-22BF-4CFD-A788-DEE334FA0CB7}"
+	ProjectSection(SolutionItems) = preProject
+		buildtools.json = buildtools.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
