@@ -1,5 +1,26 @@
-{
+ {
   "$schema": "https://mobilebuildtools.com/schemas/v2/buildtools.schema.json",
+  "appSettings": {
+    "TesteEnvoriment": [ //"Name of Project"
+      {
+        "accessibility": "Public",
+        "className": "AppSettings", // Name of Class
+        "delimiter": ";",
+        "namespace": "Helpers", // Namespace to find variables 
+        "rootNamespace": "TesteEnvoriment",
+        "properties": [ // Here are the types of variables you will have in the system 
+          {
+            "name": "var1",
+            "type": "String"
+          },
+          {
+            "name": "var2",
+            "type": "String"
+          }
+        ]
+      }
+    ]
+  },
   "appConfig": {
     "strategy": "TransformOnly"
   },
@@ -36,34 +57,7 @@
     "characterLimit": 250,
     "filename": "ReleaseNotes.txt",
     "createInRoot": false,
-    "disable": false
-  },
-  "appSettings": {
-    "BuildToolsSample": [
-      {
-        "className": "Settings",
-        "accessibility": "Internal",
-        "namespace": "Helpers",
-        "properties": [
-          {
-            "name": "Message",
-            "type": "String"
-          },
-          {
-            "name": "AppCenterId",
-            "type": "String"
-          },
-          {
-            "name": "Backend",
-            "type": "Uri"
-          },
-          {
-            "name": "ClientId",
-            "type": "Guid"
-          }
-        ]
-      }
-    ]
+    "disable": true
   },
   "environment": {
     "defaults": {},
@@ -71,5 +65,5 @@
       "Debug": {}
     }
   },
-  "debug": false
+  "debug": true
 }

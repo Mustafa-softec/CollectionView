@@ -226,7 +226,7 @@ namespace Cura
             #endregion
 
 
-            
+            //AppSetting
             // add more sections here ...
         }
 

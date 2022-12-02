@@ -6,9 +6,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cura", "Cura\Cura.csproj", "{5A6434CA-EB2A-41F8-B363-1E81F22D9D55}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RawData", "RawData", "{91DB18D7-22BF-4CFD-A788-DEE334FA0CB7}"
-	ProjectSection(SolutionItems) = preProject
-		buildtools.json = buildtools.json
-	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{D545F996-D8A4-49CA-BD47-051383C70B12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +25,14 @@ Global
 		{5A6434CA-EB2A-41F8-B363-1E81F22D9D55}.Debug|iPhone.Build.0 = Debug|iPhone
 		{5A6434CA-EB2A-41F8-B363-1E81F22D9D55}.Release|iPhone.ActiveCfg = Release|iPhone
 		{5A6434CA-EB2A-41F8-B363-1E81F22D9D55}.Release|iPhone.Build.0 = Release|iPhone
+		{D545F996-D8A4-49CA-BD47-051383C70B12}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{D545F996-D8A4-49CA-BD47-051383C70B12}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{D545F996-D8A4-49CA-BD47-051383C70B12}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{D545F996-D8A4-49CA-BD47-051383C70B12}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{D545F996-D8A4-49CA-BD47-051383C70B12}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{D545F996-D8A4-49CA-BD47-051383C70B12}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{D545F996-D8A4-49CA-BD47-051383C70B12}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{D545F996-D8A4-49CA-BD47-051383C70B12}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
