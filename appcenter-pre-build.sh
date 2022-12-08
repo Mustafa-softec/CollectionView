@@ -25,6 +25,27 @@ then
     exit
 fi
 
+if [ -z "$APS_ENVIRONMENT" ]
+then
+    echo "You need define the APS_ENVIRONMENT variable in App Center"
+    exit
+fi
+
+ENTITLEMENTS_PLIST_FILE=$APPCENTER_SOURCE_DIRECTORY/Cura/Entitlements.plist
+
+if [ -e "$ENTITLEMENTS_PLIST_FILE" ]
+then
+    echo "Updating aps-environment to $APS_ENVIRONMENT in Entitlements.plist"
+    plutil -replace aps-environment -string $APS_ENVIRONMENT $ENTITLEMENTS_PLIST_FILE
+
+    echo "File content:"
+    cat $ENTITLEMENTS_PLIST_FILE
+else
+     echo "Fail to update aps-environment"
+    exit
+fi
+
+
 APP_CONSTANT_FILE=$APPCENTER_SOURCE_DIRECTORY/Core/AppConstant.cs
 
 if [ -e "$APP_CONSTANT_FILE" ]
